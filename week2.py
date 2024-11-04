@@ -20,5 +20,5 @@ my_list.pop()
 my_list.sort()
 
 # Find and print the index of the value 30 in my_list
-index30 = my_list.index(30)
-print(index30)
+indexto30 = my_list.index(30)
+print(indexto30)
