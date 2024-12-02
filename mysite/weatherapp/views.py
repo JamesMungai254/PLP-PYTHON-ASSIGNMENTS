@@ -9,8 +9,8 @@ def index(request):
     if request.method == 'POST':
         city = request.POST['city']
 
-        source = urllib.request.urlopen('http://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=1f4a300e9a69337ca198a88e0edbad5c').read()
-        list_of_data = json.loads(source)
+        source = urllib.request.urlopen('http://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=<my token>').read()
+        list_of_data = json.loads(source)# github has issues on exposing my token
 
         data = {
             "country_code": str(list_of_data['sys']['country']),
